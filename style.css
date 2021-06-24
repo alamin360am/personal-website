@@ -6,7 +6,7 @@ body {
 
 section {
      height: 600px;
-     padding-bottom: 100px;
+     padding-bottom: 300px;
 }
 
 .about {
@@ -18,6 +18,14 @@ section {
 .biography {
      background-image: url(img/biography-bg.png);
      background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.latest-work {
+     height: 280px;
+     background-image: url(img/latest-work-bg.png);
+     background-repeat: no-repeat;
+     background-position: left;
      background-size: cover;
 }
 
@@ -41,6 +49,13 @@ a {
      background-image: linear-gradient(45deg, lightpink, rgb(255, 0, 140));
      padding: 10px 25px;
      border-radius: 5px;
+     transition: all 0.4s;
+}
+
+a:hover {
+     background-image: linear-gradient(45deg,rgb(255, 0, 140), lightpink);
+     padding: 12px 27px;
+     border-radius: 5px;
 }
 
 p {
@@ -57,7 +72,67 @@ h1 {
      font-weight: bold;
 }
 
+.latest-work h1 {
+     text-align: center;
+     margin-top: 0;
+     margin-bottom: 100px;
+     padding-top: 50px;
+}
+
 .info {
      position: relative;
      top: 175px;
+}
+
+.one-third {
+     float: left;
+     width: 25%;
+     margin-left: 5%;
+     padding-left: 2%;
+}
+
+.one-third img {
+     width: 100%;
+}
+
+footer {
+     height: 500px;
+     background-image: url(img/footer-bg.png);
+     background-position: left;
+}
+
+footer h1 {
+     margin: 0;
+     text-align: center;
+     padding-top: 50px;
+     padding-bottom: 100px;
+}
+
+footer p {
+     text-align: center;
+}
+
+.bold {
+     color: black;
+     font-weight: bold;
+}
+
+footer b {
+     text-align: center;
+}
+
+.message {
+     background-color: rgb(255, 0, 140);
+     height: 100px;
+     width: 450px;
+     position: relative;
+     left: 35%;
+}
+
+.message p {
+     color: white;
+}
+
+.message .bold {
+     padding-top: 15px;
 }
